@@ -10,6 +10,7 @@ NC='\e[0m' # penutup
 BGGR="\033[42;37m" # hijau
 BGRE="\033[41;37m" # merah
 BGYE="\033[43;37m" # kuning
+BGBL="\033[44;36m" # Biru
 BGPU="\033[45;37m" # ungu
 # // Domain
 domain=$(cat /etc/xray/domain)
@@ -77,18 +78,20 @@ echo ""
 #echo -e "     ${PR}│${NC}   Total RAM         ${NC}:  $tram MB"
 #echo -e "     ${PR}│${NC}   Isp Name          ${NC}:  $ISP"
 #echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"	
-#echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
-#echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
-#echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
+echo -e "     ${PR}┌─────────────────────────────────────────────────┐${NC}"
+echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
+echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"
+echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
+echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "        ${BGGR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
+echo -e "          ${BGBL}SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
 echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING           ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE  ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER     ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER     ${PR}│${NC}"   
-echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  UPDATE VERSION   ${PR}│${NC}"               
+echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC} UPDATE VERSION    ${PR}│${NC}"               
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
