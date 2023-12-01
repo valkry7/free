@@ -34,10 +34,13 @@ wget -O backup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/back
 wget -O restore "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/strt.sh"
 wget -O limitspeed "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/limitspeed.sh"
+sh"
+wget -O menu-backup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/menu-backup.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
 chmod +x strt
 chmod +x limitspeed
+chmod +x menu-backup
 rm -f /root/set-br.sh
 echo ""
