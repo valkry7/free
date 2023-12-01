@@ -1,29 +1,25 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
+#MYIP=$(wget -qO- ipinfo.io/ip);
 # // color
-GREENBO="\e[92;1m"
+#GREENBO="\e[92;1m"
 NC='\e[0m' # penutup
-BGGREEN="\033[42;37m" # hijau
-BGRED="\033[41;37m" # merah
-BGYELLOW="\033[43;37m" # kuning
-BGPURPLE="\033[45;37m" # ungu
-
-clear 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m      • TROJAN GFW MENU •          \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Create Account Trojan "
-echo -e " [\e[36m•2\e[0m] Trial Account Trojan "
-echo -e " [\e[36m•3\e[0m] Extending Account Trojan Active Life "
-echo -e " [\e[36m•4\e[0m] Delete Account Trojan "
-echo -e " [\e[36m•5\e[0m] Check User Login Trojan "
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#BGGREEN="\033[42;37m" # hijau
+#BGRED="\033[41;37m" # merah
+#BGYELLOW="\033[43;37m" # kuning
+#BGPURPLE="\033[45;37m" # ungu
+grenbo="\e[92;1m"
+NC='\033[0m'
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m         MENU MANAGER TGF                 $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mCreate TrojanGFW${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mTrial TrojanGFW${NC}"
+echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mExtend TrojanGFW${NC}"
+echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mDelete Acount GFW${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mCheck login TrojanGFW${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mCheck Comeback To Menu${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
