@@ -1,7 +1,5 @@
 #!/bin/bash
-# // izin vps
 MYIP=$(wget -qO- ipinfo.io/ip);
-
 # // color
 GREENBO="\e[92;1m"
 NC='\e[0m' # penutup
@@ -9,10 +7,12 @@ BGGREEN="\033[42;37m" # hijau
 BGRED="\033[41;37m" # merah
 BGYELLOW="\033[43;37m" # kuning
 BGPURPLE="\033[45;37m" # ungu
+PR="\033[1;35m"
+
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • SSH & OVPN MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "${PR}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${BGGREEN}       • SSH & OVPN MENU •       ${NC}"
+echo -e "${PR}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 echo -e " [\e[36m•1\e[0m] Create SSH & OpenVPN Account "
 echo -e " [\e[36m•2\e[0m] Trial Account SSH & OpenVPN "
