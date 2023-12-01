@@ -74,7 +74,7 @@ echo -e "             ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RU
 echo -e "             ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
 echo -e "             ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
 echo -e "             ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
-echo -e "             ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}x.)${NC}  EXIT"               
+echo -e "             ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  EXIT"               
 echo -e "             ${PR}└──────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
@@ -90,5 +90,5 @@ case $Lt in
 7) clear ; menu-backup ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set
-x) exit ;;
+10) exit ;;
 esac
