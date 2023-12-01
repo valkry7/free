@@ -1,29 +1,26 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
+#MYIP=$(wget -qO- ipinfo.io/ip);
 # // color
-GREENBO="\e[92;1m"
+#GREENBO="\e[92;1m"
 NC='\e[0m' # penutup
-BGGREEN="\033[42;37m" # hijau
-BGRED="\033[41;37m" # merah
-BGYELLOW="\033[43;37m" # kuning
-BGPURPLE="\033[45;37m" # ungu
-
+#BGGREEN="\033[42;37m" # hijau
+#BGRED="\033[41;37m" # merah
+#BGYELLOW="\033[43;37m" # kuning
+#BGPURPLE="\033[45;37m" # ungu
+grenbo="\e[92;1m"
+NC='\033[0m'
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • XRAY / VLESS MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Create Account XRAY Vless Websocket "
-echo -e " [\e[36m•2\e[0m] Trial Account XRAY Vless "
-echo -e " [\e[36m•3\e[0m] Extending Account XRAY Vless Active Life "
-echo -e " [\e[36m•4\e[0m] Delete Account XRAY Vless Websocket "
-echo -e " [\e[36m•5\e[0m] Check User Login XRAY Vless "
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          MENU MANAGER VL                 $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mCreate Vless${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mTrial Vless${NC}"
+echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mExtend Vless${NC}"
+echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mDelete Vless${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mCek Login Vless${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mComeback${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
