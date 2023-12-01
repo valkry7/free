@@ -7,10 +7,10 @@ GR="\e[92;1m"
 PR="\033[1;35m"
 YY="\033[1;33m"
 NC='\e[0m' # penutup
-BG_GR="\033[42;37m" # hijau
-BG_RE="\033[41;37m" # merah
-BG_YE="\033[43;37m" # kuning
-BG_PU="\033[45;37m" # ungu
+BGGR="\033[42;37m" # hijau
+BGRE="\033[41;37m" # merah
+BGYE="\033[43;37m" # kuning
+BGPU="\033[45;37m" # ungu
 # // Domain
 domain=$(cat /etc/xray/domain)
 # // system Information
@@ -62,15 +62,11 @@ HENCET="https://raw.githubusercontent.com/valkry7/free/SUDEV/"
 #fram=$( free -m | awk 'NR==2 {print $4}' )
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
-
 vmc=$(grep -c -E "^### " "/etc/xray/config.json")
 let vma=$vmc/2
-
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-
 trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
-
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
 clear 
@@ -85,7 +81,7 @@ echo ""
 #echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 #echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "        ${BG_GR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
+echo -e "        ${BGGR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
 echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING           ${PR}│${NC}"
@@ -96,7 +92,7 @@ echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  UPDATE
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
-read -p "chose options [ 1 / 9 or x  ]  :  "  oven
+read -p "choose options [ 1 / 10 or Exit  ]  :  "  oven
 echo -e   ""
 case $oven in
 1) clear ; menu-ssh ; exit ;;
