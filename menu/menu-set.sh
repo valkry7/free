@@ -1,35 +1,25 @@
 #!/bin/bash
 # // izin
-MYIP=$(wget -qO- ipinfo.io/ip);
-
+#MYIP=$(wget -qO- ipinfo.io/ip);
 # // color
-GREENBO="\e[92;1m"
+grenbo="\e[92;1m"
 NC='\e[0m' # penutup
-BGGREEN="\033[42;37m" # hijau
-BGRED="\033[41;37m" # merah
-BGYELLOW="\033[43;37m" # kuning
-BGPURPLE="\033[45;37m" # ungu
-
-clear 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m          • SYSTEM MENU •          \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Panel Domain"
-echo -e " [\e[36m•2\e[0m] Change Port All Account"
-echo -e " [\e[36m•3\e[0m] Webmin Menu"
-echo -e " [\e[36m•4\e[0m] Speedtest VPS"
-echo -e " [\e[36m•5\e[0m] About Script"
-echo -e " [\e[36m•6\e[0m] Set Auto Reboot"
-echo -e " [\e[36m•7\e[0m] Restart All Service"
-echo -e " [\e[36m•8\e[0m] Change Banner"
-echo -e " [\e[36m•9\e[0m] Cek Bandwith"
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo -e   ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+clear
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          MENU MANAGER                    $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mDomain Manager${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mChanges Port${NC}"
+echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mInstall Webmn${NC}"
+echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mSpeedTest${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mDevelovers script${NC}"
+echo -e "\033[1;93m│  ${grenbo}6.${NC} \033[0;36mSet Riset Server${NC}"
+echo -e "\033[1;93m│  ${grenbo}7.${NC} \033[0;36mRestart All Serv${NC}"
+echo -e "\033[1;93m│  ${grenbo}8.${NC} \033[0;36mChange Banner${NC}"
+echo -e "\033[1;93m│  ${grenbo}9.${NC} \033[0;36mCek Bandwith${NC}"
+echo -e "\033[1;93m│  ${grenbo}0.${NC} \033[0;36mComeback to Menu${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
