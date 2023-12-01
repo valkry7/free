@@ -1,5 +1,5 @@
 #!/bin/bash
-MYIP=$(curl -sS ipv4.icanhazip.com)
+#MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
 # // color
 GR="\e[92;1m"
@@ -69,11 +69,11 @@ echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"
 echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING            ${PR}│${NC}"
-echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE   ${PR}│${NC}"
-echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER      ${PR}│${NC}"
-echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER      ${PR}│${NC}"   
-echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  UPDATE VERSION    ${PR}│${NC}"               
+echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING           ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE  ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER     ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER     ${PR}│${NC}"   
+echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  UPDATE VERSION   ${PR}│${NC}"               
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
