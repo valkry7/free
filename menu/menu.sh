@@ -91,4 +91,5 @@ case $Lt in
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set
 10) clear ; reboot ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
 esac
