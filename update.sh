@@ -27,7 +27,7 @@ wget -O menu-trojan "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/m
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/usernew.sh"
+#wget -O usernew "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/usernew.sh"
 #wget -O trial "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/trial.sh"
 #wget -O renew "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/renew.sh"
 #wget -O hapus "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/hapus.sh"
@@ -43,24 +43,24 @@ wget -O menu-set "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu
 wget -O menu-domain "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-domain.sh"
 #wget -O add-host "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/add-host.sh"
 #wget -O port-change "https://raw.githubusercontent.com/valkry7/free/SUDEV/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/valkry7/free/SUDEV/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-webmin.sh"
+#wget -O certv2ray "https://raw.githubusercontent.com/valkry7/free/SUDEV/xray/certv2ray.sh"
+#wget -O menu-webmin "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-webmin.sh"
 #wget -O speedtest "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/speedtest_cli.py"
 #wget -O about "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/about.sh"
 #wget -O auto-reboot "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/auto-reboot.sh"
 #wget -O restart "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/bw.sh"
+#wget -O bw "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/bw.sh"
 # // Backup
-wget -O autobackup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/strt.sh"
-wget -O limitspeed "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/limitspeed.sh"
+#wget -O autobackup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/autobackup.sh"
+#wget -O backup "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/backup.sh"
+#wget -O restore "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/restore.sh"
+#wget -O strt "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/strt.sh"
+#wget -O limitspeed "https://raw.githubusercontent.com/valkry7/free/SUDEV/backup/limitspeed.sh"
 
 # change port
 #wget -O port-ssl "https://raw.githubusercontent.com/valkry7/free/SUDEV/port/port-ssl.sh"
 #wget -O port-ovpn "https://raw.githubusercontent.com/valkry7/free/SUDEV/port/port-ovpn.sh"
-wget -O xp "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/xp.sh"
+#wget -O xp "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/xp.sh"
 #wget -O acs-set "https://raw.githubusercontent.com/valkry7/free/SUDEV/acs-set.sh"
 #wget -O sshws "https://raw.githubusercontent.com/valkry7/free/SUDEV/ssh/sshws.sh"
 
@@ -109,7 +109,6 @@ chmod +x port-ovpn
 chmod +x xp
 chmod +x acs-set
 chmod +x sshws
-cd
 clear
 echo -e "${G}======================[ INSTALL SUKSES ]=======================${N}"
 echo ""
