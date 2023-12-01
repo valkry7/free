@@ -23,11 +23,11 @@ uptime="$(uptime -p | cut -d " " -f 2-10)"
 
 
 #Status certificate
-modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
-modifyTime1=$(date +%s -d "${modifyTime}")
-currentTime=$(date +%s)
-stampDiff=$(expr ${currentTime} - ${modifyTime1})
-days=$(expr ${stampDiff} / 86400)
+#modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
+#modifyTime1=$(date +%s -d "${modifyTime}")
+#currentTime=$(date +%s)
+#stampDiff=$(expr ${currentTime} - ${modifyTime1})
+#days=$(expr ${stampDiff} / 86400)
 #remainingDays=$(expr 90 - ${days})
 #tlsStatus=${remainingDays}
 #if [[ ${remainingDays} -le 0 ]]; then
@@ -90,6 +90,6 @@ case $ut in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-'10) clear ; reboot ; exit ;;'
+10) clear ; reboot ; exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
