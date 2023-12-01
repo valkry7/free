@@ -1,5 +1,6 @@
 #!/bin/bash
 #MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 # // color
 GR="\e[92;1m"
