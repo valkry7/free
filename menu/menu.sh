@@ -23,11 +23,11 @@ uptime="$(uptime -p | cut -d " " -f 2-10)"
 
 
 #Status certificate
-#modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
-#modifyTime1=$(date +%s -d "${modifyTime}")
-#currentTime=$(date +%s)
-#stampDiff=$(expr ${currentTime} - ${modifyTime1})
-#days=$(expr ${stampDiff} / 86400)
+modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
+modifyTime1=$(date +%s -d "${modifyTime}")
+currentTime=$(date +%s)
+stampDiff=$(expr ${currentTime} - ${modifyTime1})
+days=$(expr ${stampDiff} / 86400)
 #remainingDays=$(expr 90 - ${days})
 #tlsStatus=${remainingDays}
 #if [[ ${remainingDays} -le 0 ]]; then
@@ -60,22 +60,22 @@ uptime="$(uptime -p | cut -d " " -f 2-10)"
 #fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
 echo ""
-echo -e "         ${PR}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "         ${PR}│${NC}   Operating System  ${NC}:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
-echo -e "         ${PR}│${NC}   Total RAM         ${NC}:  $tram MB"
-echo -e "         ${PR}│${NC}   System Uptime     ${NC}:  $uptime "
-echo -e "         ${PR}│${NC}   Isp Name          ${NC}:  $ISP"
-echo -e "         ${PR}│${NC}   Domain            ${NC}:  $domain"	
-echo -e "         ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
-echo -e "         ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
-echo -e "         ${PR}└─────────────────────────────────────────────────┘${NC}"
-echo -e "                ${PR}┌──────────────────────────────────────┐${NC}"
-echo -e "                ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING"
-echo -e "                ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
-echo -e "                ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
-echo -e "                ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
-echo -e "                ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}x.)${NC}  EXIT"               
-echo -e "                ${PR}└──────────────────────────────────────┘${NC}" 
+echo -e "     ${PR}┌─────────────────────────────────────────────────┐${NC}"
+echo -e "     ${PR}│${NC}   Operating System  ${NC}:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
+echo -e "     ${PR}│${NC}   Total RAM         ${NC}:  $tram MB"
+echo -e "     ${PR}│${NC}   System Uptime     ${NC}:  $uptime "
+echo -e "     ${PR}│${NC}   Isp Name          ${NC}:  $ISP"
+echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"	
+echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
+echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
+echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
+echo -e "             ${PR}┌──────────────────────────────────────┐${NC}"
+echo -e "             ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING"
+echo -e "             ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
+echo -e "             ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
+echo -e "             ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
+echo -e "             ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}x.)${NC}  EXIT"               
+echo -e "             ${PR}└──────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
 read -p " chose options [ 1 / 9 or x  ]  :  "  Lt
