@@ -7,10 +7,10 @@ GR="\e[92;1m"
 PR="\033[1;35m"
 YY="\033[1;33m"
 NC='\e[0m' # penutup
-BGGREEN="\033[42;37m" # hijau
-BGRED="\033[41;37m" # merah
-BGYELLOW="\033[43;37m" # kuning
-BGPURPLE="\033[45;37m" # ungu
+BG_GR="\033[42;37m" # hijau
+BG_RE="\033[41;37m" # merah
+BG_YE="\033[43;37m" # kuning
+BG_PU="\033[45;37m" # ungu
 # // Domain
 domain=$(cat /etc/xray/domain)
 # // system Information
@@ -60,6 +60,19 @@ HENCET="https://raw.githubusercontent.com/valkry7/free/SUDEV/"
 #freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 #uram=$( free -m | awk 'NR==2 {print $3}' )
 #fram=$( free -m | awk 'NR==2 {print $4}' )
+vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
+let vla=$vlx/2
+
+vmc=$(grep -c -E "^### " "/etc/xray/config.json")
+let vma=$vmc/2
+
+ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
+
+trx=$(grep -c -E "^#! " "/etc/xray/config.json")
+let tra=$trx/2
+
+ssx=$(grep -c -E "^## " "/etc/xray/config.json")
+let ssa=$ssx/2
 clear 
 echo ""
 echo ""
@@ -71,6 +84,9 @@ echo ""
 #echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
 #echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 #echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
+echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
+echo -e "        ${BG_GR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}
+echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
 echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING           ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE  ${PR}│${NC}"
