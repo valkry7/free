@@ -1,6 +1,6 @@
 #!/bin/bash
 MYIP=$(curl -sS ipv4.icanhazip.com)
-
+clear
 # // color
 GR="\e[92;1m"
 PR="\033[1;35m"
@@ -12,7 +12,6 @@ BGYELLOW="\033[43;37m" # kuning
 BGPURPLE="\033[45;37m" # ungu
 # // Domain
 domain=$(cat /etc/xray/domain)
-
 # // system Information
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
@@ -20,8 +19,6 @@ cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 tram=$( free -m | awk 'NR==2 {print $2}' )
 IPVPS=$(curl -s ipinfo.io/ip )
 uptime="$(uptime -p | cut -d " " -f 2-10)"
-
-
 #Status certificate
 #modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 #modifyTime1=$(date +%s -d "${modifyTime}")
@@ -69,13 +66,13 @@ echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"
 echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
 echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
-echo -e "           ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "           ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING"
-echo -e "           ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
-echo -e "           ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
-echo -e "           ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
-echo -e "           ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  EXIT"               
-echo -e "           ${PR}└─────────────────────────────────────────┘${NC}" 
+echo -e "          ${PR}┌─────────────────────────────────────────┐${NC}"
+echo -e "          ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING"
+echo -e "          ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
+echo -e "          ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
+echo -e "          ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
+echo -e "          ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  EXIT"               
+echo -e "          ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
 read -p "chose options [ 1 / 9 or x  ]  :  "  ut
@@ -90,6 +87,6 @@ case $ut in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-# 10) clear ; reboot ; exit ;;
+10) exit 
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
