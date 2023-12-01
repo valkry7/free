@@ -1,5 +1,5 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
+# MYIP=$(wget -qO- ipinfo.io/ip);
 # // color
 GREENBO="\e[92;1m"
 NC='\e[0m' # penutup
@@ -8,24 +8,24 @@ BGRED="\033[41;37m" # merah
 BGYELLOW="\033[43;37m" # kuning
 BGPURPLE="\033[45;37m" # ungu
 PR="\033[1;35m"
-
+grenbo="\e[92;1m"
+NC='\033[0m'
 clear
-echo -e "${PR}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${BGGREEN}       • SSH & OVPN MENU •        ${NC}"
-echo -e "${PR}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Create SSH&OPENVPN "
-echo -e " [\e[36m•2\e[0m] Triall SSH&OPENVPN"
-echo -e " [\e[36m•3\e[0m] Reneww SSH&OPENVPN"
-echo -e " [\e[36m•4\e[0m] Delete SSH&OPENVPN"
-echo -e " [\e[36m•5\e[0m] Check login SSH&OPENVPN"
-echo -e " [\e[36m•6\e[0m] Member SSH&OPENVPN "
-echo -e " [\e[36m•7\e[0m] Delete User Exp SSH&OPENVPN"
-echo -e " [\e[36m•8\e[0m] Set up Autokill SSH "
-echo -e " [\e[36m•9\e[0m] Cek Multi Login SSH&OPENVPN"
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo ""
-echo -e "${PR}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          MENU MANAGER SSH                $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mCreate SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mTrial SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mRenew SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mDelet SHH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mUser Login SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}6.${NC} \033[0;36mMember SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}7.${NC} \033[0;36mDell User SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}8.${NC} \033[0;36mAuto Kill SSH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}9.${NC} \033[0;36mMultiLogin SHH & OPENVPN${NC}"
+echo -e "\033[1;93m│  ${grenbo}0.${NC} \033[0;36mBack To Menu${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
