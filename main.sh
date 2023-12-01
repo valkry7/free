@@ -71,9 +71,9 @@ if [ "" = "$PKG_OK" ]; then
   echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
   echo -e "[ ${tyblue}NOTES${NC} ] TAU ENTER KAN ?? YA ENTER LAH BABI"
   read
-fi
+# else
   echo -e "[ ${green}INFO${NC} ] Oke installed"
-
+ fi
 ttet=`uname -r`
 ReqPKG="linux-headers-$ttet"
 if ! dpkg -s $ReqPKG  >/dev/null 2>&1; then
