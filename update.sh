@@ -1,4 +1,6 @@
 #!/bin/bash
+rm -rf update.sh
+rm -rf update.sh.1
 cd /usr/bin
 rm -rf menu-ssh
 rm -rf menu-trgo
