@@ -78,7 +78,7 @@ echo -e "           ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  EXI
 echo -e "           ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
-read -p " chose options [ 1 / 9 or x  ]  :  "  ut
+read -p "chose options [ 1 / 9 or x  ]  :  "  ut
 echo -e   ""
 case $ut in
 1) clear ; menu-ssh ; exit ;;
@@ -90,6 +90,6 @@ case $ut in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-10) clear ; reboot ; exit ;;
+# 10) clear ; reboot ; exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
