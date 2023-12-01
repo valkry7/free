@@ -29,14 +29,14 @@ ask=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "bug.com",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF`
@@ -67,7 +67,7 @@ clear
 echo -e ""
 echo -e "===============[ TRIAL VMESS ]=============="
 echo -e "Remarks        : ${user}"
-echo -e "Expiry in         : $exp"
+echo -e "Expiry in      : $exp"
 echo -e "Domain         : ${domain}"
 echo -e "Port TLS       : ${tls}"
 echo -e "Port none TLS  : ${none}"
@@ -81,9 +81,9 @@ echo -e "ServiceName    : vmess-grpc"
 echo -e "==============="
 echo -e "Link TLS       : ${vmesslink1}"
 echo -e "==============="
-echo -e "Link WS       : ${vmesslink2}"
+echo -e "Link WS        : ${vmesslink2}"
 echo -e "==============="
-echo -e "Link GRPC   : ${vmesslink3}"
+echo -e "Link GRPC      : ${vmesslink3}"
 echo -e "==============="
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
