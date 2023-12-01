@@ -1,5 +1,5 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
+#MYIP=$(wget -qO- ipinfo.io/ip);
 # // color
 GREENBO="\e[92;1m"
 NC='\e[0m' # penutup
