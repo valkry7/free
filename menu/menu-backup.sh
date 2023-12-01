@@ -1,42 +1,15 @@
 clear
-red='\033[0;31m'
-green='\033[0;32m'
-yellow='\033[0;33m'
-plain='\033[0m'
-blue='\033[0;34m'
-ungu='\033[0;35m'
-Green="\033[32m"
-Red="\033[31m"
-WhiteB="\e[5;37m"
-BlueCyan="\e[5;36m"
-Green_background="\033[42;37m"
-Red_background="\033[41;37m"
-Suffix="\033[0m"
-echo ""
+grenbo="\e[92;1m"
+NC='\e[0m' # penutup
 clear
-echo -e "$green███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██████╗  █████╗  ██████╗██╗  ██╗██╗   ██╗██████╗ $NC"
-echo -e "$green████╗ ████║██╔════╝████╗  ██║██║   ██║    ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██║   ██║██╔══██╗$NC"
-echo -e "$green██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║    ██████╔╝███████║██║     █████╔╝ ██║   ██║██████╔╝$NC"
-echo -e "$green██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║    ██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔═══╝ $NC"
-echo -e "$green██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝    ██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║     $NC"
-echo -e "$green╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     $NC"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "            t.me/LunaticTunnel"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
-echo -e "${BlueCyan}Pilih Nomor: "
-echo
-echo "1).Backup"
-echo "2).Restore"
-echo "3).strt"
-echo "4).limit speed"
-echo "5).autobackup"
-echo
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          BCKP MANAGER RE                 $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mBackup Vps Data${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mRestored Vps Data${NC}"
+echo -e "\033[1;93m│  ${grenbo}0.${NC} \033[0;36mComeback${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>> " bro
@@ -62,10 +35,10 @@ echo "Terimakasih Sudah Mamakai Script Goblok Ini"
 echo
 echo "--------------------------------------------------------"
 fi
-if [ $bro = 3 ] || [ $bro = 3 ]
+if [ $bro = 0 ] || [ $bro = 0 ]
 then
-figlet "strt"
-strt
+figlet "ok"
+menu
 echo "--------------------------------------------------------"
 echo
 echo "Terimakasih Sudah Mamakai Script Goblok Ini"
