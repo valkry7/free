@@ -19,7 +19,7 @@ echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mTrial Vless${NC}"
 echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mExtend Vless${NC}"
 echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mDelete Vless${NC}"
 echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mCek Login Vless${NC}"
-echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mComeback${NC}"
+echo -e "\033[1;93m│  ${grenbo}0.${NC} \033[0;36mComeback${NC}"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p " Select menu :  "  opt
