@@ -4,7 +4,7 @@ none="$(cat ~/log-install.txt | grep -w "Vless None TLS" | cut -d: -f2|sed 's/ /
 user=Hencet-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=1
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+exp=`date -d "$masaaktif menit" +"%Y-%m-%d"`
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "menit : " masaaktif
 sed -i '/#vless$/a\#& '"$user $exp"'\
@@ -18,7 +18,7 @@ systemctl restart xray
 clear
 echo -e "===============[ TRIAL VLESS ]=============="
 echo -e "Remarks        : ${user}"
-echo -e "Expiry In         : $exp"
+echo -e "Expiry In      : $exp"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : $tls"
 echo -e "port none TLS  : $none"
