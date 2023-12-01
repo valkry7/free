@@ -85,7 +85,7 @@ echo ""
 #echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 #echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "        ${BG_GR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}
+echo -e "        ${BG_GR} SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
 echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING           ${PR}│${NC}"
