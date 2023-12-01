@@ -58,26 +58,24 @@ uptime="$(uptime -p | cut -d " " -f 2-10)"
 clear 
 echo ""
 echo -e "     ${PR}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "     ${PR}│${NC}   Operating System  ${NC}:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "     ${PR}│${NC}   Total RAM         ${NC}:  $tram MB"
-echo -e "     ${PR}│${NC}   System Uptime     ${NC}:  $uptime "
 echo -e "     ${PR}│${NC}   Isp Name          ${NC}:  $ISP"
 echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"	
 echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
 echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
 echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
-echo -e "          ${PR}┌─────────────────────────────────────────┐${NC}"
-echo -e "          ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING"
-echo -e "          ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE"
-echo -e "          ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER"
-echo -e "          ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER"   
-echo -e "          ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  EXIT"               
-echo -e "          ${PR}└─────────────────────────────────────────┘${NC}" 
+echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
+echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING            ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE   ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER      ${PR}│${NC}"
+echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER      ${PR}│${NC}"   
+echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  EXIT              ${PR}│${NC}"               
+echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
-read -p "chose options [ 1 / 9 or x  ]  :  "  ut
+read -p "chose options [ 1 / 9 or x  ]  :  "  oven
 echo -e   ""
-case $ut in
+case $oven in
 1) clear ; menu-ssh ; exit ;;
 2) clear ; menu-vmess ; exit ;;
 3) clear ; menu-vless ; exit ;;
@@ -87,6 +85,6 @@ case $ut in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-10) exit 
+10) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
