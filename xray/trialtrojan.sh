@@ -15,7 +15,7 @@ trojanlink="trojan://${uuid}@isi_bug_disini:${tr}?path=%2Ftrojan-ws&security=tls
 clear
 echo -e "===============[ TROJAN ]=============="
 echo -e "Remarks      : ${user}"
-echo -e "Expiry in       : $exp"
+echo -e "Expiry in    : $exp"
 echo -e "Host/IP      : ${domain}"
 echo -e "port         : ${tr}"
 echo -e "Key          : ${uuid}"
