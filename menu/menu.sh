@@ -19,6 +19,10 @@ cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 tram=$( free -m | awk 'NR==2 {print $2}' )
 IPVPS=$(curl -s ipinfo.io/ip )
 uptime="$(uptime -p | cut -d " " -f 2-10)"
+
+# UPDATE
+HENCET="https://raw.githubusercontent.com/valkry7/free/SUDEV/"
+
 #Status certificate
 #modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 #modifyTime1=$(date +%s -d "${modifyTime}")
@@ -69,7 +73,7 @@ echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING
 echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE   ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER      ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER      ${PR}│${NC}"   
-echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  EXIT              ${PR}│${NC}"               
+echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC}  UPDATE VERSION    ${PR}│${NC}"               
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
@@ -85,6 +89,6 @@ case $oven in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-10) exit ;;
+10) clear ; wget ${HENCET}update.sh && chmod +x update.sh && ./update.sh ; exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
