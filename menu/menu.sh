@@ -90,5 +90,5 @@ case $Lt in
 7) clear ; menu-backup ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set
-10) exit ;;
+10) clear ; reboot ;;
 esac
