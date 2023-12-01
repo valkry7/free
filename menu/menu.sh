@@ -78,11 +78,11 @@ echo ""
 #echo -e "     ${PR}│${NC}   Total RAM         ${NC}:  $tram MB"
 #echo -e "     ${PR}│${NC}   Isp Name          ${NC}:  $ISP"
 #echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"	
-echo -e "     ${PR}┌─────────────────────────────────────────────────┐${NC}"
+echo -e "     ${PR}┌────────────────────────────────────────────────┐${NC}"
 echo -e "     ${PR}│${NC}   Ip Vps            ${NC}:  $IPVPS"	
 echo -e "     ${PR}│${NC}   Domain            ${NC}:  $domain"
 echo -e "     ${PR}│${NC}   Swap cpu          ${NC}:  $cpu_usage %"	
-echo -e "     ${PR}└─────────────────────────────────────────────────┘${NC}"
+echo -e "     ${PR}└────────────────────────────────────────────────┘${NC}"
 echo -e "        ${PR}┌─────────────────────────────────────────┐${NC}"
 echo -e "          ${BGBL}SSH : $ssh1 TROJAN : $tra VMESS : $vma VLESS : $vla ${NC}"
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
@@ -91,11 +91,11 @@ echo -e "        ${PR}│${NC} ${GR}1.)${NC}  SSH&OPENVPN ${GR}6.)${NC}  RUNNING
 echo -e "        ${PR}│${NC} ${GR}2.)${NC}  VMESS       ${GR}7.)${NC}  BACKUP / RESTORE  ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}3.)${NC}  VLESS       ${GR}8.)${NC}  CHANGE BANNER     ${PR}│${NC}"
 echo -e "        ${PR}│${NC} ${GR}4.)${NC}  TROJAN-GO   ${GR}9.)${NC}  OTHER MANAGER     ${PR}│${NC}"   
-echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}10.)${NC} UPDATE VERSION    ${PR}│${NC}"               
+echo -e "        ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${GR}0.)${NC}  UPDATE VERSION    ${PR}│${NC}"               
 echo -e "        ${PR}└─────────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
-read -p "choose options [ 1 / 10 or Exit  ]  :  "  oven
+read -p "choose options [ 1 / 0 or Exit  ]  :  "  oven
 echo -e   ""
 case $oven in
 1) clear ; menu-ssh ; exit ;;
@@ -107,6 +107,6 @@ case $oven in
 7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; menu-set ; exit ;;
-10) clear ; wget ${HENCET}update.sh && chmod +x update.sh && ./update.sh ; exit ;;
+0) clear ; wget ${HENCET}update.sh && chmod +x update.sh && ./update.sh ; exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
