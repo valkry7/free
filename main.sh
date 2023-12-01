@@ -99,23 +99,24 @@ fi
  # sleep 1
   echo ""
  # sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+  echo -e "[ ${tyblue}NOTES${NC} ] 0. Anjayy"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 1. slebew"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 2. slentod"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 3. slemek"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+  echo -e "[ ${tyblue}NOTES${NC} ] 4. slencrot"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+  echo -e "[ ${tyblue}NOTES${NC} ] 5. suruput ahhh"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] TAU ENTER KAN ?? YA ENTER LAH BABI"
+  echo -e "[ ${tyblue}NOTES${NC} ] 7. seeerrrr ahhhhh croot🤤"
+  echo -e "[ ${tyblue}NOTES${NC} ] MAU LANJUT ? HAYU PENCET ENTER AHH🤤"
   read
 # else
-  echo -e "[ ${green}INFO${NC} ] Oke installed"
+  echo -e "[ ${green}INFO${NC} ] MANTAPPP"
+  sleep 2
 # fi
 #ttet=`uname -r`
 #ReqPKG="linux-headers-$ttet"
@@ -240,6 +241,7 @@ else
 gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
+clear
 echo " "
 echo "=====================-[ LUNATIC FREE ]-===================="
 echo ""
@@ -279,7 +281,7 @@ echo "===============-[ LT⭐ PROJECT ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-rm /root/setup.sh >/dev/null 2>&1
+rm /root/main.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
