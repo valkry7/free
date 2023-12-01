@@ -78,18 +78,18 @@ echo -e "             ${PR}│${NC} ${GR}5.)${NC}  TROJAN GFW  ${YY}10.)${NC}  E
 echo -e "             ${PR}└──────────────────────────────────────┘${NC}" 
 echo -e   ""
 echo -e   ""
-read -p " chose options [ 1 / 9 or x  ]  :  "  Lt
+read -p " chose options [ 1 / 9 or x  ]  :  "  ut
 echo -e   ""
-case $Lt in
-1) clear ; menu-ssh ;;
-2) clear ; menu-vmess ;;
-3) clear ; menu-vless ;;
-4) clear ; menu-trgo ;;
-5) clear ; menu-trojan ;;
-6) clear ; running ;;
-7) clear ; menu-backup ;;
+case $ut in
+1) clear ; menu-ssh ; exit ;;
+2) clear ; menu-vmess ; exit ;;
+3) clear ; menu-vless ; exit ;;
+4) clear ; menu-trgo ; exit ;;
+5) clear ; menu-trojan ; exit  ;;
+6) clear ; running ; exit ;;
+7) clear ; menu-backup ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
-9) clear ; menu-set
-10) clear ; reboot ;;
-*) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
+9) clear ; menu-set ; exit ;;
+10) clear ; reboot ; exit ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
