@@ -272,6 +272,7 @@ netfilter-persistent reload
 cd /usr/bin
 # menu
 wget -O menu "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-backup.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/valkry7/free/SUDEV/menu/running.sh"
@@ -326,6 +327,7 @@ chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
 
+chmod +x menu-backup
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
