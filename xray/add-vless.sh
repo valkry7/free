@@ -1,10 +1,7 @@
 #!/bin/bash
-dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+#biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
-
-
-
 clear
 source /var/lib/SIJA/ipvps.conf
 if [[ "$IP" = "" ]]; then
@@ -16,8 +13,10 @@ tls="$(cat ~/log-install.txt | grep -w "Vless TLS" | cut -d: -f2|sed 's/ //g')"
 none="$(cat ~/log-install.txt | grep -w "Vless None TLS" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "===============[ Add Title Account ]=============="
+echo ""
 
 		read -rp "Username: " -e user
+                read -rp "Limit ip: " -e limit
 		CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
@@ -46,7 +45,8 @@ clear
 echo -e "===============[ VLESS ]=============="
 echo -e ""
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
-echo -e "Expiry In         : ${exp}"
+echo -e "Expiry In      : ${exp}"
+echo -e "Limit Ip       : ${limit}"
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-user.log
 echo -e "port TLS       : $tls" | tee -a /etc/log-create-user.log
 echo -e "port none TLS  : $none" | tee -a /etc/log-create-user.log
