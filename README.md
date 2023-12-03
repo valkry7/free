@@ -5,3 +5,7 @@
 
 # Update Menu
 <pre><code>wget https://raw.githubusercontent.com/valkry7/free/SUDEV/update.sh && chmod +x update.sh && sed -i -e 's/\r$//' update.sh && screen -S update ./update.sh</code></pre>
+
+# OS SUPPORT
+- DEBIAN 10 , 11
+- UBUNTU 18 , 20
